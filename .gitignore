@@ -1,0 +1,13 @@
+*~
+*.elc
+auto-save-list
+recentf
+savehist
+savefile
+saveplace
+eshell
+elpa
+el-get
+semanticdb
+url
+ede-projects.el
