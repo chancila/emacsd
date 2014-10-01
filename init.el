@@ -9,6 +9,9 @@
 (add-to-list 'load-path (file-name-directory load-file-name))
 
 (require 'ch-variables)
+(require 'ch-packages)
+(require 'ch-functions)
+(require 'ch-mode)
 
 (unless (file-exists-p ch-savefile-dir)
   (make-directory ch-savefile-dir))
@@ -17,8 +20,12 @@
 
 (setq gc-cons-threshold 50000000)
 
-(require 'ch-packages)
+(when (eq system-type 'darwin)
+  (require 'ch-osx))
+
+
 (require 'ch-modules)
+
 
 (provide 'init)
 ;;; init.el ends here
