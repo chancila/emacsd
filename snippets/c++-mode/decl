@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: decl
+# key: decl
+# binding: direct-keybinding
+# --
+${1:void} $2($3) $4noexcept;

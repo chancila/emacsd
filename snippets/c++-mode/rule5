@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: rule5
+# key: rule5
+# binding: direct-keybinding
+# --
+$1(const $1& from) = ${2:default};
+$1($1&& from) = $2;
+$1& operator=(const $1& rs) = $2;
+$1& operator=($1&& rs) = $2;
+~$1();
