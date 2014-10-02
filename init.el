@@ -23,9 +23,7 @@
 (when (eq system-type 'darwin)
   (require 'ch-osx))
 
-
 (require 'ch-modules)
-
 
 (provide 'init)
 ;;; init.el ends here
