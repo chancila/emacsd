@@ -8,7 +8,7 @@
                        rainbow-identifiers))
 
 (require 'rainbow-delimiters)
-(global-rainbow-delimiters-mode +1)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 (provide 'ch-rainbow)
 ;;; ch-rainbow.el ends here

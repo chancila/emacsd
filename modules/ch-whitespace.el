@@ -3,7 +3,7 @@
 ;;; Code:
 (require 'whitespace)
 
-(setq whitespace-line-column 80)
+(setq whitespace-line-column 100)
 (setq whitespace-style '(face empty trailing newline lines-tail))
 (setq whitespace-action '(cleanup auto-cleanup))
 (global-whitespace-mode t)

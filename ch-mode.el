@@ -3,7 +3,7 @@
 ;;; Code:
 (defvar ch-mode-map
   (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C-s r") 'load-file)
+    (define-key map (kbd "C-s-r") 'load-file)
     (define-key map (kbd "C-s-=") 'ch-indent-buffer)
     map))
 
@@ -22,6 +22,8 @@
 (defun ch-off ()
   "Turn off `ch-mode'."
   (ch-mode -1))
+
+(ch-global-mode)
 
 (provide 'ch-mode)
 ;;; ch-mode.el ends here
