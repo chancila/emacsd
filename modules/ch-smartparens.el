@@ -8,6 +8,7 @@
 (require 'smartparens-config)
 
 (show-smartparens-global-mode)
+(smartparens-global-mode)
 
 (provide 'ch-smartparens)
 ;;; ch-smartparens.el ends here

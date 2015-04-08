@@ -6,5 +6,7 @@
 (require 'key-chord)
 (key-chord-mode +1)
 
+(key-chord-define-global "ii" 'imenu)
+
 (provide 'ch-keychord)
 ;;; ch-keychord.el ends here
