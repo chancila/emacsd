@@ -6,8 +6,9 @@
 (ch-require-package 'helm)
 (ch-require-package 'helm-ag)
 
-; (helm-adaptative-mode 1)
-; (helm-autoresize-mode 1)
+(customize-set-variable
+ 'helm-adaptive-history-file
+ (f-join ch-savefile-dir  "helm-adaptive-history"))
 
 (provide 'ch-helm)
 ;;; ch-helm.el ends here
