@@ -1,8 +1,8 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: tc
-# key: tc
+# name: unit test (catch)
+# key: ut
 # binding: direct-keybinding
 # --
-TEST_CASE("$1", "$2") {
-$0
+TEST_CASE("$1", "[$2]") {
+                $0
 }

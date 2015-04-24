@@ -6,7 +6,7 @@
        (if (equal system-type 'windows-nt) "USERNAME" "USER")))
 
 (defvar ch-root-dir
-  (file-name-directory load-file-name)
+  user-emacs-directory
   "Root directory.")
 
 (defvar ch-packages-dir

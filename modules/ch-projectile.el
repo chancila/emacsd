@@ -3,7 +3,10 @@
 ;;; Code:
 (require 'ch-packages)
 (require 'ch-ag)
+(require 'ch-helm)
+
 (ch-require-package 'projectile)
+(ch-require-package 'helm-projectile)
 
 (require 'projectile)
 (setq projectile-cache-file (expand-file-name  "projectile.cache"

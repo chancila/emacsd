@@ -1,0 +1,10 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: catch test file
+# key: catch_test
+# binding: direct-keybinding
+# --
+#include <catch.hpp>
+
+TEST_CASE("$1", "[$2]") {
+                $0
+}

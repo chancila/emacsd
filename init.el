@@ -6,7 +6,7 @@
          (<= emacs-minor-version 3))
   (setq load-prefer-newer t))
 
-(add-to-list 'load-path (file-name-directory load-file-name))
+(add-to-list 'load-path (concat user-emacs-directory "core/"))
 
 (require 'ch-variables)
 (require 'ch-packages)
@@ -27,4 +27,3 @@
 
 (provide 'init)
 ;;; init.el ends here
-(put 'upcase-region 'disabled nil)
