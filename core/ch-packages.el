@@ -14,6 +14,7 @@
 
 ;; set package-user-dir to be relative to Prelude install path
 (setq package-user-dir (expand-file-name "elpa" ch-root-dir))
+
 (package-initialize)
 
 ;; ghetto install dash
@@ -46,7 +47,6 @@
   "Install all packages listed in `ch-packages'."
   (unless (ch-packages-installed-p)
     (message "%s" "refreshing its package database...")
-    (package-refresh-contents)
     (message "%s" " done.")
     (ch-require-packages ch-packages)))
 

@@ -11,7 +11,8 @@
 (add-hook 'after-init-hook 'global-company-mode)
 
 (add-to-list 'company-backends 'company-c-headers)
-(add-to-list 'company-c-headers-path-system "/usr/include/c++/4.9.2/")
+
+(global-set-key (kbd "<C-tab>") 'company-complete)
 
 (provide 'ch-company)
 ;;; ch-company.el ends here

@@ -15,9 +15,10 @@
 
 (defun ch-cpp-mode-hook ()
   "C++ mode hook."
-  (setq flycheck-clang-language-standard "c++1y")
+  (setq flycheck-clang-language-standard "c++14")
   (setq flycheck-gcc-language-standard "c++14"))
 
 (add-hook 'c++-mode-hook 'ch-cpp-mode-hook)
+
 (provide 'ch-c-mode)
 ;;; ch-c-mode.el ends here
