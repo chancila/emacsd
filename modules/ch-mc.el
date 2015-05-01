@@ -7,6 +7,7 @@
 (global-set-key (kbd "C-S-<mouse-1>") 'mc/add-cursor-on-click)
 (global-set-key (kbd "C-M-s-c") 'mc/edit-lines)
 (global-set-key (kbd "C-M-s-n") 'mc/mark-next-lines)
+(global-set-key (kbd "C-M-s-i") 'mc/insert-numbers)
 (global-set-key (kbd "M-s-n") 'mc/mark-next-like-this)
 (global-set-key (kbd "M-s-p") 'mc/unmark-next-like-this)
 
