@@ -19,7 +19,7 @@
   '(add-to-list 'company-backends 'company-irony))
 
 (eval-after-load 'flycheck
-  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+  '(add-hook 'flycheck-mode-hook 'flycheck-irony-setup))
 
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
