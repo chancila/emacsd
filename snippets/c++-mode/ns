@@ -1,5 +1,5 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: ns
+# name: namespace block
 # key: ns
 # binding: direct-keybinding
 # --

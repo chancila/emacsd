@@ -1,5 +1,5 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: rcast
+# name: reinterpret_cast
 # key: rcast
 # binding: direct-keybinding
 # --

@@ -1,8 +1,8 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: member function
-# key: mf
+# name: st
+# key: st
 # binding: direct-keybinding
 # --
-auto $1($2) $3${4:noexcept} {
-     $0
-}
+struct $1 {
+       $0
+};
