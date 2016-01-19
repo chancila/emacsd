@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: inc
-# key: inc
+# name: once
+# key: once
 # binding: direct-keybinding
 # --
-#include <$1>$0
+#pragma once

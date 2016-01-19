@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: decl
-# key: decl
+# name: func
+# key: func
 # binding: direct-keybinding
 # --
-${1:void} $2($3) $4noexcept;
+${1:constexpr} auto ${2:func}($3)$0
