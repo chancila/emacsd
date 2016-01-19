@@ -6,7 +6,7 @@
 
 (customize-set-variable
  'clang-format-executable
- "/Users/cristianh/src/llvm/build/bin//clang-format")
+ "/usr/local/opt/llvm/bin/clang-format")
 
 ;; (add-hook 'c-mode-common-hook
 ;;           (lambda () (add-hook 'before-save-hook
