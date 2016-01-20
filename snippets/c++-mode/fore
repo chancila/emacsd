@@ -1,6 +1,8 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: template
-# key: tm
+# name: range for
+# key: fore
 # binding: direct-keybinding
 # --
-template <typename $0>
+for ($1 : $2) {
+    $0
+}
