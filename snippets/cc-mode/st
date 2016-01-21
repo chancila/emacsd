@@ -3,4 +3,6 @@
 # key: st
 # binding: direct-keybinding
 # --
-struct
+struct $1 {
+       $0
+};

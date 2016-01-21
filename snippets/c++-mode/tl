@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: inc
-# key: inc
+# name: tl
+# key: tl
 # binding: direct-keybinding
 # --
-#include <$1>$0
+template <typename ${1:T}>$0
