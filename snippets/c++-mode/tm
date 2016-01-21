@@ -1,6 +1,6 @@
 # -*- mode: snippet; require-final-newline: nil -*-
-# name: static cast
-# key: scast
+# name: template
+# key: tm
 # binding: direct-keybinding
 # --
-static_cast<$1>($0)
+template <typename ${0:T}>$1

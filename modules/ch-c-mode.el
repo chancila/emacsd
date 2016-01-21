@@ -6,8 +6,8 @@
 (defun ch-c-mode-common-defaults ()
   (setq c-basic-offset 4)
   (c-set-offset 'innamespace '-)
-  (c-set-offset 'arglist-cont-nonempty '+)
-  (c-set-offset 'arglist-intro '+)
+  (c-set-offset 'arglist-cont-nonempty c-lineup-arglist)
+  (c-set-offset 'arglist-intro c-lineup-arglist)
   (c-set-offset 'substatement-open 0)
   (c-set-offset 'innamespace 0))
 
