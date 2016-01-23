@@ -21,5 +21,18 @@
   (indent-region (point-min) (point-max) nil)
   (untabify (point-min) (point-max)))
 
+(defun ch-fill-eq (&optional arg)
+  "Fill line with = until ARG colum."
+  (interactive "P")
+  (insert-char (string-to-char "=") (- (or arg 100) (current-column))))
+
+(defun ch-snakecase-to-typecase ()
+  "Convert the current word to TypeCase from snake_case_t."
+  (interactive)
+  (let* ((bounds (bounds-of-thing-at-point 'symbol))
+         (to_rep   (mapconcat 'capitalize (s-split "_" (s-chop-suffix "_t" (current-word))) "")))
+    (delete-region (car bounds) (cdr bounds))
+    (insert to_rep)))
+
 (provide 'ch-functions)
 ;;; ch-functions.el ends here

@@ -1,10 +1,16 @@
 ;;; ch-mode.el --- ch mode
 ;;; Commentary:
 ;;; Code:
+
+(require 'ch-functions)
+
 (defvar ch-mode-map
   (let ((map (make-sparse-keymap)))
     (define-key map (kbd "C-s-r") 'load-file)
-    (define-key map (kbd "C-s-=") 'ch-indent-buffer)
+    (define-key map (kbd "C-s-i") 'ch-indent-buffer)
+    (define-key map (kbd "C-s-=") 'ch-fill-eq)
+    (define-key map (kbd "C-s-s") 'sort-lines)
+    (define-key map (kbd "C-s-t") 'ch-snakecase-to-typecase)
     map))
 
 (define-minor-mode ch-mode

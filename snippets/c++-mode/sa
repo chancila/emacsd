@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: static assert
+# key: sa
+# binding: direct-keybinding
+# --
+static_assert($1, "$2");$0

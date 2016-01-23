@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: SCOPE_EXIT
+# key: se
+# binding: direct-keybinding
+# --
+SCOPE_EXIT {$1};$0
