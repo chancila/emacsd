@@ -2,14 +2,21 @@
 ;;; Commentary:
 ;;; Code:
 (require 'ch-flycheck)
+(require 'cc-mode)
+(require 'cc-align)
 
 (defun ch-c-mode-common-defaults ()
+  "Set cc-mode defaults."
   (setq c-basic-offset 4)
-  (c-set-offset 'innamespace '-)
-  (c-set-offset 'arglist-cont-nonempty c-lineup-arglist)
-  (c-set-offset 'arglist-intro c-lineup-arglist)
-  (c-set-offset 'substatement-open 0)
-  (c-set-offset 'innamespace 0))
+  (setq c-offsets-alist
+        '((arglist-cont-nonempty . c-lineup-arglist)
+          (arglist-intro . c-lineup-arglist)
+          (innamespace . -)
+          (arglist-cont-nonempty . c-lineup-arglist)
+          (arglist-intro . c-lineup-arglist)
+          (substatement-open . 0)
+          (innamespace . 0)
+          )))
 
 (add-hook 'c-mode-common-hook 'ch-c-mode-common-defaults)
 

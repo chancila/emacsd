@@ -1,0 +1,12 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: declare allocator
+# key: dec_alloc
+# binding: direct-keybinding
+# --
+struct $1 {
+       $0
+       kinline auto destroy() -> void;
+       inline auto allocate(size_t size) -> void*;
+       inline auto deallocate(void* ptr) -> void;
+       inline auto reallocate(void* ptr, size_t size) -> void*;
+};

@@ -14,3 +14,4 @@ ede-projects.el
 .mc-lists.el
 helm-adaptive-history
 irony/
+local.el
