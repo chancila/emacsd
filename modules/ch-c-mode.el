@@ -11,11 +11,9 @@
   (setq c-offsets-alist
         '((arglist-cont-nonempty . c-lineup-arglist)
           (arglist-intro . c-lineup-arglist)
-          (innamespace . -)
-          (arglist-cont-nonempty . c-lineup-arglist)
-          (arglist-intro . c-lineup-arglist)
-          (substatement-open . 0)
           (innamespace . 0)
+          (substatement-open . 0)
+          (defun-block-intro . +)
           )))
 
 (add-hook 'c-mode-common-hook 'ch-c-mode-common-defaults)
