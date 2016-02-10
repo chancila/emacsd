@@ -7,14 +7,16 @@
 
 (defun ch-c-mode-common-defaults ()
   "Set cc-mode defaults."
-  (setq c-basic-offset 4)
-  (setq c-offsets-alist
-        '((arglist-cont-nonempty . c-lineup-arglist)
-          (arglist-intro . c-lineup-arglist)
-          (innamespace . 0)
-          (substatement-open . 0)
-          (defun-block-intro . +)
-          )))
+  (c-add-style "user"
+               '("linux"
+                 (c-basic-offset . 4)
+                 (c-offsets-alist . ((arglist-cont-nonempty . c-lineup-arglist)
+                                     (arglist-intro . c-lineup-arglist)
+                                     (innamespace . 0)
+                                     (substatement-open . +)
+                                     (defun-block-intro . +)
+                                     ))))
+  (c-set-style "user"))
 
 (add-hook 'c-mode-common-hook 'ch-c-mode-common-defaults)
 

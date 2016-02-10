@@ -3,8 +3,11 @@
 ;;; Code:
 
 (require 'ch-packages)
+(require 'f)
+
 (ch-require-package 'helm)
 (ch-require-package 'helm-ag)
+(ch-require-package 'helm-projectile)
 
 (require 'helm-config)
 

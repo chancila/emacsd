@@ -14,7 +14,7 @@
 (setq projectile-known-projects-file (expand-file-name "projectile-bookmarks.eld"
 						       ch-savefile-dir))
 
-(define-key projectile-mode-map (kbd "C-c p A") 'projectile-ag)
+(define-key projectile-mode-map (kbd "C-c p A") 'helm-projectile-ag)
 
 (projectile-global-mode t)
 (provide 'ch-projectile)
