@@ -10,6 +10,9 @@
 
 (add-hook 'after-init-hook 'global-company-mode)
 
+(setq company-idle-delay 0.2)
+(setq company-minimum-prefix-length 2)
+
 (add-to-list 'company-backends 'company-c-headers)
 
 (global-set-key (kbd "<C-tab>") 'company-complete)
