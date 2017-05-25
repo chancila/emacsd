@@ -30,6 +30,3 @@
 
 (provide 'init)
 ;;; init.el ends here
-
-(custom-set-variables
- '(helm-adaptive-history-file "~/.emacs.d/savefile/helm-adaptive-history"))
