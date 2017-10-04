@@ -3,11 +3,11 @@
 ;;; Code:
 (require 'ch-packages)
 (ch-require-packages '(flx-ido
-                       ido-ubiquitous
+                       ido-completing-read+
                        smex))
 
 (require 'ido)
-(require 'ido-ubiquitous)
+(require 'ido-completing-read+)
 (require 'flx-ido)
 
 (setq ido-enable-prefix nil

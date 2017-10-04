@@ -1,6 +1,9 @@
 ;;; init.el -- My emacs init file
 ;;; Commentary:
 ;;; Code:
+
+(setq custom-file "/dev/null")
+
 (unless
     (and (<= emacs-major-version 24)
          (<= emacs-minor-version 3))
@@ -29,4 +32,5 @@
     (load-file (locate-user-emacs-file "local.el")))
 
 (provide 'init)
+
 ;;; init.el ends here
