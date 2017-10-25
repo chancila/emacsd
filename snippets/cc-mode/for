@@ -3,6 +3,6 @@
 # key: for
 # binding: direct-keybinding
 # --
-for (${1:int} ${2:i} = ${3:0}; $2 < ${4:N}; ${5:i++}) {
+for (${1:int} ${2:i} = ${3:0}; $2 < ${4:N}; $2++) {
     $0
 }
