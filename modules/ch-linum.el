@@ -3,9 +3,7 @@
 ;;; Code:
 (require 'ch-packages)
 
-(ch-require-package 'linum-relative)
-(global-linum-mode t)
-(require 'linum-relative)
+(global-display-line-numbers-mode)
 
 (provide 'ch-linum)
 ;;; ch-linum.el ends here

@@ -11,6 +11,8 @@
     (define-key map (kbd "C-s-=") 'ch-fill-eq)
     (define-key map (kbd "C-s-s") 'sort-lines)
     (define-key map (kbd "C-s-t") 'ch-snakecase-to-typecase)
+    (define-key map (kbd "C-s-p s") 'profiler-start)
+    (define-key map (kbd "C-s-p r") 'profiler-report)
     map))
 
 (define-minor-mode ch-mode
