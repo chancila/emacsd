@@ -19,9 +19,11 @@
 (defun ch-enable-ccls ()
   "Enable ccls if the current projectile project has a compile-commands.json database."
   (if (f-exists? (f-join (projectile-project-root) "compile_commands.json"))
-      (progn (lsp-ccls-enable)
-             (company-mode))))
+      (progn (lsp))))
 
-(add-hook 'c-mode-common-hook 'ch-enable-ccls)
+(add-hook 'c-mode-hook  'ch-enable-ccls)
+(add-hook 'objc-mode-hook  'ch-enable-ccls)
+(add-hook 'c++-mode-hook  'ch-enable-ccls)
+
 (provide 'ch-lsp)
 ;;; ch-lsp.el ends here

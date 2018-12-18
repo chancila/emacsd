@@ -1,7 +1,6 @@
 ;;; ch-c-mode.el --- C mode stuff
 ;;; Commentary:
 ;;; Code:
-(require 'ch-flycheck)
 (require 'cc-mode)
 (require 'cc-align)
 

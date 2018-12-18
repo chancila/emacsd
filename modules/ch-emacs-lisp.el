@@ -2,7 +2,6 @@
 ;;; Commentary:
 ;;; Code:
 (require 'ch-rainbow)
-(require 'ch-flycheck)
 
 (add-hook 'emacs-lisp-mode-hook 'rainbow-identifiers-mode)
 
