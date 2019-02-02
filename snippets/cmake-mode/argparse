@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: argparse
+# key: argparse
+# --
+set(FLAGS$1)
+set(SINGLE_ARGS$2)
+set(MULTI_ARGS$3)
+
+cmake_parse_arguments(${4:ARG} "\$\{FLAGS\}" "\$\{SINGLE_ARGS\}" "\$\{MULTI_ARGS\}" \$\{ARGN\})
+$0

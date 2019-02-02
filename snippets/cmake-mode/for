@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: for
+# key: for
+# --
+foreach (${1:VARIABLE} \$\{$2\})
+        $0
+endforeach ()
