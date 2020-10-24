@@ -32,7 +32,7 @@
 (ch-require-package 'clang-format)
 
 (require 'clang-format)
-(customize-set-variable 'clang-format-executable "/usr/local/opt/llvm/bin/clang-format")
+(customize-set-variable 'clang-format-executable "/opt/llvm/10/bin/clang-format")
 
 (provide 'ch-c-mode)
 ;;; ch-c-mode.el ends here
