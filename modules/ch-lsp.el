@@ -4,6 +4,7 @@
 (require 'ch-packages)
 
 (ch-require-package 'lsp-mode)
+(ch-require-package 'lsp-python-ms)
 (ch-require-package 'ccls)
 (ch-require-package 'company)
 
@@ -15,6 +16,7 @@
   (if (f-exists? (f-join (projectile-project-root) "compile_commands.json"))
       (progn (lsp))))
 
+(setq lsp-python-ms-auto-install-server t)
 (setq lsp-python-ms-python-executable-cmd "python3")
 
 (defun ch-enable-py-lsp ()
