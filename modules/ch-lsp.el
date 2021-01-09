@@ -6,21 +6,21 @@
 (ch-require-package 'lsp-mode)
 (ch-require-package 'ccls)
 (ch-require-package 'company)
-(ch-require-package 'company-lsp)
 
 (require 'ch-projectile)
 (require 'ccls)
-(require 'company-lsp)
-
-(push 'company-lsp company-backends)
-(setq company-transformers nil company-lsp-async t company-lsp-cache-candidates nil)
-(setq ccls-executable "/Users/cristianh/src/ccls/Release/ccls")
 
 (defun ch-enable-ccls ()
   "Enable ccls if the current projectile project has a compile-commands.json database."
   (if (f-exists? (f-join (projectile-project-root) "compile_commands.json"))
       (progn (lsp))))
 
+(setq lsp-python-ms-python-executable-cmd "python3")
+
+(defun ch-enable-py-lsp ()
+  (lsp))
+
+(add-hook 'python-mode-hook  'ch-enable-py-lsp)
 (add-hook 'c-mode-hook  'ch-enable-ccls)
 (add-hook 'objc-mode-hook  'ch-enable-ccls)
 (add-hook 'c++-mode-hook  'ch-enable-ccls)

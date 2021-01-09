@@ -17,3 +17,5 @@ irony/
 local.el
 local/
 .lsp-session*
+.cache
+transient

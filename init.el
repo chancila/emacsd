@@ -11,10 +11,7 @@
 
 (setq custom-file "/dev/null")
 
-(unless
-    (and (<= emacs-major-version 24)
-         (<= emacs-minor-version 3))
-  (setq load-prefer-newer t))
+(setq load-prefer-newer t)
 
 (add-to-list 'load-path (concat user-emacs-directory "core/"))
 
