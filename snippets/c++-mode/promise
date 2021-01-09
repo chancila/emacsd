@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: promise
+# key: promise
+# --
+
+std::experimental::suspend_always initial_suspend() noexcept { return {}; }
+std::experimental::suspend_always final_suspend() noexcept { return {}; }
+auto get_return_object() noexcept {}
+auto return_value(U&& value) noexcept {}
+auto unhandled_exception() noexcept { std::abort(); }

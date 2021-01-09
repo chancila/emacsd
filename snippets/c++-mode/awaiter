@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: awaiter
+# key: awaiter
+# --
+auto await_ready() noexcept { return false; }
+auto await_suspend(support::coroutine_handle<> continuation) noexcept { }
+auto await_resume() noexcept { }
