@@ -24,6 +24,7 @@
 (add-hook 'c-mode-hook  'ch-enable-ccls)
 (add-hook 'objc-mode-hook  'ch-enable-ccls)
 (add-hook 'c++-mode-hook  'ch-enable-ccls)
+(add-hook 'after-init-hook 'global-company-mode)
 
 (provide 'ch-lsp)
 ;;; ch-lsp.el ends here

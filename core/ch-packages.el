@@ -14,8 +14,6 @@
 
 (setq package-user-dir (expand-file-name "elpa" ch-root-dir))
 
-(package-initialize)
-
 ;; ghetto install dash
 (unless (package-installed-p 'dash)
   (progn (package-refresh-contents)

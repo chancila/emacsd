@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: load_cc
+# key: load_cc
+# --
+load("@rules_cc//cc:defs.bzl", "cc_library")$0
