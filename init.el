@@ -35,8 +35,8 @@
 (if (f-exists? (locate-user-emacs-file "local.el"))
     (load-file (locate-user-emacs-file "local.el")))
 
-(add-to-list 'default-frame-alist
-             '(font . "Iosevka Nerd Font Mono-13"))
+;; (add-to-list 'default-frame-alist
+;;              '(font . "Iosevka Nerd Font Mono-13"))
 
 (provide 'init)
 

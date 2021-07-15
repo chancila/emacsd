@@ -28,5 +28,12 @@
 (add-hook 'c++-mode-hook  'ch-enable-ccls)
 (add-hook 'after-init-hook 'global-company-mode)
 
+(lsp-register-custom-settings
+ '(("gopls.completeUnimported" t t)
+   ("gopls.staticcheck" t t)
+   ("gopls.env" '(("GOPACKAGESDRIVER" . "/home/chancila/bin/bazelgopackages")
+                  ("GOPACKAGESDRIVER_BAZEL_QUERY" . "kind(go_binary, //...)")
+                  ))))
+
 (provide 'ch-lsp)
 ;;; ch-lsp.el ends here
