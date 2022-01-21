@@ -28,5 +28,8 @@
 (add-hook 'c++-mode-hook  'ch-enable-ccls)
 (add-hook 'after-init-hook 'global-company-mode)
 
+(with-eval-after-load 'lsp-mode
+  (add-to-list 'lsp-file-watch-ignored-directories "[/\\\\]bazel-"))
+
 (provide 'ch-lsp)
 ;;; ch-lsp.el ends here

@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: gtest
+# key: gtest
+# --
+#include <gtest/gtest.h>
+
+TEST($1, $2) {
+         $0
+}
