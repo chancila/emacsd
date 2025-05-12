@@ -3,9 +3,9 @@
 ;;; Code:
 
 (require 'ch-packages)
-(ch-require-package 'bazel-mode)
+(ch-require-package 'bazel)
 
-(require 'bazel-mode)
+(require 'bazel)
 
 (add-hook 'bazel-mode-hook (lambda () (add-hook 'before-save-hook #'bazel-format nil t)))
 (add-to-list 'auto-mode-alist '(".*BUILD\\'" . bazel-mode))

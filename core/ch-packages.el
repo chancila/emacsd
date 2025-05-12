@@ -12,6 +12,8 @@
 (add-to-list 'package-archives
              '("melpa" . "http://melpa.org/packages/") t)
 
+(package-refresh-contents)
+
 (setq package-user-dir (expand-file-name "elpa" ch-root-dir))
 
 ;; ghetto install dash
